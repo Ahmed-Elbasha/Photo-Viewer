@@ -16,6 +16,12 @@
 
 @implementation PhotosTableViewController
 
+
+// Function: addPhoto:(Photo*)photo withName:(NSString*)photoName fileName:(NSString*)fileName notes:(NSString*)notes toMutableArray:(NSMutableArray*)mutableArray
+//-----------------------------------------------------------------------------------------------------
+// This function to create Photo objects.
+//-------------------------
+
 -(void) addPhoto:(Photo*)photo withName:(NSString*)photoName fileName:(NSString*)fileName notes:(NSString*)notes toMutableArray:(NSMutableArray*)mutableArray {
     
     photo = [[Photo alloc]init];
@@ -29,13 +35,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //Changing the title of the navigation bar to Photos
     self.title = @"Photos";
     
-    // create array
+    // creates an array of Photo Objects
     photos = [[NSMutableArray alloc] init];
     
+    // Instantiate a main Photo Object pointer.
     Photo *picture = [[Photo alloc] init];
     
+    // Creating and adding bunch of Photo Objects based on the original pointer and adding them to photos array.
     [self addPhoto:picture
           withName:@"Emerald Bay"
           fileName:@"emeraldbay"

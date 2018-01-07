@@ -110,17 +110,11 @@
 		7E540B481F6C92F5004A85AE /* PhotoViewer */ = {
 			isa = PBXGroup;
 			children = (
+				7E623ACF20012F1D0069DDDC /* Utilities */,
+				7E623ACB20012E2B0069DDDC /* ViewController */,
 				7E540B4C1F6C92F6004A85AE /* AppDelegate.h */,
 				7E540B4D1F6C92F6004A85AE /* AppDelegate.m */,
 				7E540B521F6C92F6004A85AE /* Main.storyboard */,
-				7E540B7C1F6CA171004A85AE /* Photo.h */,
-				7E540B7D1F6CA171004A85AE /* Photo.m */,
-				7E540B7F1F6CA203004A85AE /* PhotosTableViewController.h */,
-				7E540B801F6CA203004A85AE /* PhotosTableViewController.m */,
-				7E540B851F6CA264004A85AE /* InfoViewController.h */,
-				7E540B861F6CA264004A85AE /* InfoViewController.m */,
-				7E540B821F6CA23B004A85AE /* DisplayViewController.h */,
-				7E540B831F6CA23B004A85AE /* DisplayViewController.m */,
 				7E540B551F6C92F6004A85AE /* Assets.xcassets */,
 				7E540B571F6C92F6004A85AE /* LaunchScreen.storyboard */,
 				7E540B5A1F6C92F6004A85AE /* Info.plist */,
@@ -156,6 +150,60 @@
 			);
 			name = PhotoViewerUITests;
 			path = PhotoViewer_Step5UITests;
+			sourceTree = "<group>";
+		};
+		7E623ACB20012E2B0069DDDC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7E623ACE20012EEF0069DDDC /* DisplayViewController */,
+				7E623ACC20012E3F0069DDDC /* PhotosTableViewController */,
+				7E623ACD20012E810069DDDC /* Info ViewController */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		7E623ACC20012E3F0069DDDC /* PhotosTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7E540B7F1F6CA203004A85AE /* PhotosTableViewController.h */,
+				7E540B801F6CA203004A85AE /* PhotosTableViewController.m */,
+			);
+			name = PhotosTableViewController;
+			sourceTree = "<group>";
+		};
+		7E623ACD20012E810069DDDC /* Info ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7E540B851F6CA264004A85AE /* InfoViewController.h */,
+				7E540B861F6CA264004A85AE /* InfoViewController.m */,
+			);
+			name = "Info ViewController";
+			sourceTree = "<group>";
+		};
+		7E623ACE20012EEF0069DDDC /* DisplayViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7E540B821F6CA23B004A85AE /* DisplayViewController.h */,
+				7E540B831F6CA23B004A85AE /* DisplayViewController.m */,
+			);
+			name = DisplayViewController;
+			sourceTree = "<group>";
+		};
+		7E623ACF20012F1D0069DDDC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				7E623AD020012F3A0069DDDC /* Photo */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		7E623AD020012F3A0069DDDC /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				7E540B7C1F6CA171004A85AE /* Photo.h */,
+				7E540B7D1F6CA171004A85AE /* Photo.m */,
+			);
+			name = Photo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

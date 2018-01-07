@@ -19,9 +19,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    // Using the fileName property value of the passed Photo object to load the image.
     UIImage *image = [UIImage imageNamed:self.currentPhoto.fileName];
     [[self currentImage] setImage:image];
     
+    // Using the name property value of the passed Photo object to change the title of the navigation bar.
     self.title = self.currentPhoto.name;
 }
 

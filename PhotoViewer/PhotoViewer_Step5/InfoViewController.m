@@ -22,6 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    // Using the notes property value of the passed Photo object to show the notes of the photo.
     _detailsLabel.text = self.currentPhoto.notes;
 }
 
